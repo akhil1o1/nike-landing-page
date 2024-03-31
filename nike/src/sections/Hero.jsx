@@ -33,7 +33,7 @@ const Hero = () => {
                Discover stylish Nike arrivals, quality comfort, and innovation
                for your active life.
             </p>
-            <Button label={"Shop Now"} iconUrl={arrowRight} />
+            <Button label={"Shop Now"} contained={true} iconUrl={arrowRight} />
             <div className=" flex gap-16 mt-20 flex-wrap">
                {statistics.map((stat) => (
                   <div key={stat.label}>

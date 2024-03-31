@@ -1,6 +1,12 @@
-const Button = ({ label, iconUrl }) => {
+const Button = ({ label, iconUrl, contained }) => {
    return (
-      <button className="flex justify-center text-lg text-white items-center gap-2 px-7 py-4 w-max rounded-full bg-coral-red font-montserrat leading-none">
+      <button
+         className={`flex justify-center text-lg  items-center gap-2 px-7 py-4 w-max rounded-full  font-montserrat leading-none ${
+            contained
+               ? "text-white bg-coral-red"
+               : "text-slate-gray border border-slate-gray bg-white"
+         }`}
+      >
          {label}
          {iconUrl && (
             <img
